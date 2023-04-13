@@ -1,0 +1,26 @@
+﻿<Page x:Class="SwimmingPool.Pages.Registration"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SwimmingPool.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="490" d:DesignWidth="920"
+      Title="Registration">
+
+    <Grid Background="White">
+        <TextBox x:Name="LoginTB" HorizontalAlignment="Left" Height="28" Margin="407,88,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="161" TextChanged="LoginTB_TextChanged"/>
+        <Label Content="Логин:" HorizontalAlignment="Left" Margin="332,80,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.516,0.433" FontSize="20"/>
+        <Label Content="Пароль:" HorizontalAlignment="Left" Margin="319,157,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.516,0.433" FontSize="20"/>
+        <Button x:Name="RegistrationBut" Content="Зарегистрироваться" HorizontalAlignment="Left" Margin="363,394,0,0" VerticalAlignment="Top" Width="205" Click="RegistrationBut_Click" Height="34" FontSize="16" FontFamily="Tahoma" />
+        <Label Content="Подтвердите&#xA;         пароль:" HorizontalAlignment="Left" Margin="272,187,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.516,0.433" Width="130" FontSize="20"/>
+        <PasswordBox x:Name="PassTB" HorizontalAlignment="Left" Margin="407,163,0,0" VerticalAlignment="Top" Width="161" Height="28" PasswordChanged="PassTB_PasswordChanged"/>
+        <PasswordBox x:Name="RePassTB" HorizontalAlignment="Left" Margin="407,217,0,0" VerticalAlignment="Top" Width="161" Height="28" PasswordChanged="RePassTB_PasswordChanged"/>
+        <Label Content="Введите данные" HorizontalAlignment="Left" Margin="351,10,0,0" VerticalAlignment="Top" Width="205" Height="50" FontSize="26" FontFamily="Tahoma"/>
+        <Button x:Name="BackButton" Content="Назад" HorizontalAlignment="Left" Margin="10,14,0,0" VerticalAlignment="Top" Width="68" Height="30" FontSize="18" FontFamily="Tahoma" Click="BackButton_Click"/>
+        <Image x:Name="UserImage" HorizontalAlignment="Left" Height="100" Margin="468,274,0,0" VerticalAlignment="Top" Width="100"/>
+        <Button x:Name="ChoosePhoto" Content="Выбрать фото" HorizontalAlignment="Left" Margin="363,346,0,0" VerticalAlignment="Top" Width="86" Height="28" Click="ChoosePhoto_Click"/>
+        <TextBox x:Name="NameTB" HorizontalAlignment="Left" Height="28" Margin="407,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="161" TextChanged="NameTB_TextChanged"/>
+        <Label Content="Имя:" HorizontalAlignment="Left" Margin="349,117,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.516,0.433" FontSize="20"/>
+    </Grid>
+</Page>
